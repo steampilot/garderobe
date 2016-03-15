@@ -1,0 +1,13 @@
+/**
+ * Cascading Style Sheet for GarDeRobe WordPress Theme
+ * Author: Jérôme Röthlisberger
+ * Email: jerome.roethlisberger@gibmit.ch
+ */
+.home {
+    background-color: #666666;
+}
+.site {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
