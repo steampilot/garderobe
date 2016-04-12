@@ -9,9 +9,14 @@
  * @package garderobe
  */
 
+/**
+ * The footer widgets below are customized versions
+ * @see https://www.tipsandtricks-hq.com/how-to-add-widgets-to-wordpress-themes-footer-1033
+ */
 ?>
 
 </div><!-- #content -->
+
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div id="footer-sidebar" class="secondary">

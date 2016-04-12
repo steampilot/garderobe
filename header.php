@@ -29,6 +29,12 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
 			<?php
+			/**
+			 * Changed the ordering of the site branding elements
+			 *
+			 * The title will only be shown if the header image is not set
+			 * Change the header image within WordPress Dashboard
+			 */
 			if ( is_front_page() && is_home() ) : ?>
 				<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
 			<?php else : ?>
@@ -39,7 +45,7 @@
 
 		</div><!-- .site-branding -->
 
-	</header><!-- #masthead -->
+	</header><!-- Changed the ordering of the nav so it appears allways below the site branding -->
 	<nav id="site-navigation" class="main-navigation" role="navigation">
 		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'garderobe' ); ?></button>
 		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>

@@ -98,6 +98,8 @@ add_action('after_setup_theme', 'garderobe_content_width', 0);
 /**
  * Register widget area.
  *
+ * Three footer widgets added
+ *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function garderobe_widgets_init()
