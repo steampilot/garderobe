@@ -11,18 +11,34 @@
 
 ?>
 
-	</div><!-- #content -->
+</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'garderobe' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'garderobe' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'garderobe' ), 'garderobe', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
+		<div id="footer-sidebar" class="secondary">
+			<div id="footer-sidebar1">
+				<?php
+				if(is_active_sidebar('footer-sidebar-1')){
+					dynamic_sidebar('footer-sidebar-1');
+				}
+				?>
+			</div>
+			<div id="footer-sidebar2">
+				<?php
+				if(is_active_sidebar('footer-sidebar-2')){
+					dynamic_sidebar('footer-sidebar-2');
+				}
+				?>
+			</div>
+			<div id="footer-sidebar3">
+				<?php
+				if(is_active_sidebar('footer-sidebar-3')){
+					dynamic_sidebar('footer-sidebar-3');
+				}
+				?>
+			</div>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
-<?php wp_footer(); ?>
-
-</body>
-</html>
+    </body>
+    </html>
